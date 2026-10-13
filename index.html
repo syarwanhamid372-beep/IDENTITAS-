@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website portfolio pribadi Syarwan Hamid" />
+  <title>Syarwan Hamid | Portfolio</title>
+
+  <!-- ===== Google Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===== Font Awesome (Icon) ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <div id="loader">
+    <div class="loader-spinner"></div>
+    <p>Memuat...</p>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- GANTI: Inisial / Nama brand -->
+      <a href="#home" class="nav-logo">Syarwan<span>.</span></a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Tentang Saya</a></li>
+          <li><a href="#cv" class="nav-link">CV</a></li>
+          <li><a href="#portfolio" class="nav-link">Hasil Karya</a></li>
+          <li><a href="#gallery" class="nav-link">Galeri</a></li>
+          <li><a href="#social" class="nav-link">Media Sosial</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+          <li><a href="#testimonial" class="nav-link">Testimoni</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Tombol Dark Mode -->
+        <button id="themeToggle" class="theme-btn" aria-label="Ganti tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Tombol Hamburger (mobile) -->
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HOME / HERO ================= -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="hero-greet">👋 Halo, saya</p>
+        <!-- GANTI: Nama lengkap Anda -->
+        <h1 class="hero-name">Syarwan Hamid</h1>
+        <!-- Efek typing otomatis -->
+        <h2 class="hero-role">
+          <span id="typing"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          <!-- GANTI: Deskripsi singkat -->
+          Selamat datang di website pribadi saya. Saya merupakan siswa SMKN 42 Jakarta
+          yang sedang menimba ilmu untuk masa depan yang lebih baik.
+        </p>
+        <div class="hero-buttons">
+          <!-- GANTI: Link CV (Google Drive / file PDF) -->
+          <a href="https://drive.google.com/file/d/1dBLmVu4cGTRi-C98ICbMKtMan6DQjjcS/view?usp=drivesdk"
+             target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-file-lines"></i> Lihat CV
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            <i class="fa-solid fa-briefcase"></i> Lihat Hasil Karya
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <!-- GANTI: Foto profil Anda (letakkan di assets/images/profile.jpg) -->
+        <img src="assets/images/profile.jpg" alt="Foto Profil" class="profile-img"
+             onerror="this.src='https://placehold.co/400x400/6366f1/ffffff?text=Foto+Profil'" />
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll ke bawah">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ================= TENTANG SAYA ================= -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Tentang <span>Saya</span></h2>
+      <p class="section-subtitle reveal">Kenali saya lebih dekat</p>
+
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <!-- GANTI: Foto Anda (assets/images/about.jpg) -->
+          <img src="assets/images/about.jpg" alt="Foto Tentang Saya"
+               onerror="this.src='https://placehold.co/400x500/8b5cf6/ffffff?text=Foto+Anda'" />
+        </div>
+
+        <div class="about-content reveal">
+          <h3>Halo! Saya Syarwan Hamid 👋</h3>
+          <p>
+            <!-- GANTI: Cerita diri Anda -->
+            Saya adalah siswa SMKN 42 Jakarta yang memiliki semangat tinggi untuk belajar
+            hal-hal baru, khususnya di bidang teknologi, desain, dan multimedia. Saya suka
+            bekerja dalam tim, disiplin, dan selalu berusaha memberikan hasil terbaik.
+          </p>
+
+          <!-- Biodata singkat -->
+          <div class="bio-list">
+            <div class="bio-item"><i class="fa-solid fa-user"></i> <strong>Nama:</strong> Syarwan Hamid</div>
+            <div class="bio-item"><i class="fa-solid fa-calendar"></i> <strong>Usia:</strong> 17 Tahun</div>
+            <div class="bio-item"><i class="fa-solid fa-location-dot"></i> <strong>Lokasi:</strong> Jakarta, Indonesia</div>
+            <div class="bio-item"><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> syarwanhamid372@gmail.com</div>
+            <div class="bio-item"><i class="fa-solid fa-school"></i> <strong>Sekolah:</strong> SMKN 42 Jakarta</div>
+            <div class="bio-item"><i class="fa-solid fa-heart"></i> <strong>Minat:</strong> Desain, Video, Web</div>
+          </div>
+
+          <!-- Keahlian dengan progress bar -->
+          <h4 class="skills-title">Keahlian</h4>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-head"><span>Desain Grafis</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>Editing Video</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>HTML & CSS</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+            </div>
+            <div class="skill">
+              <div class="skill-head"><span>JavaScript</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CV ================= -->
+  <section id="cv" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Curriculum <span>Vitae</span></h2>
+      <p class="section-subtitle reveal">Perjalanan pendidikan & pengalaman saya</p>
+
+      <!-- Kartu profil CV -->
+      <div class="cv-header reveal">
+        <!-- GANTI: Foto CV (assets/images/cv-photo.jpg) -->
+        <img src="assets/images/cv-photo.jpg" alt="Foto CV"
+             onerror="this.src='https://placehold.co/200x200/6366f1/ffffff?text=CV'" />
+        <div>
+          <h3>Syarwan Hamid</h3>
+          <p><i class="fa-solid fa-school"></i> Siswa SMKN 42 Jakarta</p>
+          <p><i class="fa-solid fa-envelope"></i> syarwanhamid372@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</p>
+        </div>
+        <!-- GANTI: Link download CV PDF Anda -->
+        <a href="assets/cv/cv-syarwan.pdf" download class="btn btn-primary cv-download">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <div class="cv-grid">
+        <!-- Pendidikan -->
+        <div class="cv-card reveal">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2023 - Sekarang</span>
+              <h4>SMKN 42 Jakarta</h4>
+              <p>Jurusan Multimedia</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2020 - 2023</span>
+              <h4>SMP Negeri [Nama]</h4>
+              <p>Siswa aktif</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2014 - 2020</span>
+              <h4>SD Negeri [Nama]</h4>
+              <p>Siswa aktif</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pengalaman -->
+        <div class="cv-card reveal">
+          <h3><i class="fa-solid fa-briefcase"></i> Pengalaman</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-date">2024</span>
+              <h4>Anggota OSIS</h4>
+              <p>Divisi Multimedia & Dokumentasi</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2024</span>
+              <h4>Panitia Kegiatan Sekolah</h4>
+              <p>Bertanggung jawab pada desain publikasi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keahlian -->
+        <div class="cv-card reveal">
+          <h3><i class="fa-solid fa-lightbulb"></i> Keahlian</h3>
+          <ul class="cv-list">
+            <li>Desain Grafis (Photoshop, Illustrator, Canva)</li>
+            <li>Editing Video (Premiere Pro, CapCut)</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            <li>Public Speaking & Presentasi</li>
+          </ul>
+        </div>
+
+        <!-- Sertifikat / Prestasi -->
+        <div class="cv-card reveal">
+          <h3><i class="fa-solid fa-award"></i> Sertifikat & Prestasi</h3>
+          <ul class="cv-list">
+            <li>Juara [Lomba] Tingkat [Wilayah] - 2024</li>
+            <li>Sertifikat Pelatihan Desain Grafis - 2024</li>
+            <li>Sertifikat Peserta Webinar Teknologi - 2025</li>
+          </ul>
+        </div>
+
+        <!-- Organisasi -->
+        <div class="cv-card reveal">
+          <h3><i class="fa-solid fa-users"></i> Organisasi</h3>
+          <ul class="cv-list">
+            <li>Anggota OSIS SMKN 42 Jakarta (Divisi Multimedia)</li>
+            <li>Anggota Ekstrakurikuler [Nama Ekskul]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Hasil <span>Karya</span></h2>
+      <p class="section-subtitle reveal">Kumpulan proyek & karya yang pernah saya buat</p>
+
+      <!-- Filter kategori -->
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="desain">Desain</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="tugas">Tugas</button>
+        <button class="filter-btn" data-filter="lainnya">Lainnya</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- ===== KARTU KARYA 1 ===== -->
+        <div class="portfolio-card reveal" data-category="desain">
+          <div class="portfolio-img">
+            <!-- GANTI: Gambar thumbnail karya -->
+            <img src="assets/images/project1.jpg" alt="Poster Kegiatan"
+                 onerror="this.src='https://placehold.co/600x400/6366f1/ffffff?text=Karya+1'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Desain</span>
+            <h3>Poster Kegiatan Sekolah</h3>
+            <p>Desain poster untuk acara perpisahan sekolah kelas XII.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Poster Kegiatan Sekolah"
+                data-desc="Poster ini dibuat menggunakan Adobe Photoshop & Illustrator untuk acara perpisahan sekolah. Ukuran A3, tema vibrant.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <!-- GANTI: Link karya jika ada -->
+              <a href="#" class="btn-link" target="_blank">
+                <i class="fa-solid fa-link"></i> Link
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KARTU KARYA 2 ===== -->
+        <div class="portfolio-card reveal" data-category="video">
+          <div class="portfolio-img">
+            <img src="assets/images/project2.jpg" alt="Video Profil"
+                 onerror="this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Karya+2'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Video</span>
+            <h3>Video Profil Sekolah</h3>
+            <p>Video profil sekolah berdurasi 3 menit dengan konsep sinematik.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Video Profil Sekolah"
+                data-desc="Video ini dibuat untuk keperluan promosi sekolah, direkam menggunakan kamera DSLR dan diedit di Adobe Premiere Pro.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="#" class="btn-link" target="_blank"><i class="fa-solid fa-link"></i> Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KARTU KARYA 3 ===== -->
+        <div class="portfolio-card reveal" data-category="website">
+          <div class="portfolio-img">
+            <img src="assets/images/project3.jpg" alt="Website Portfolio"
+                 onerror="this.src='https://placehold.co/600x400/06b6d4/ffffff?text=Karya+3'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Website</span>
+            <h3>Website Portfolio Pribadi</h3>
+            <p>Website yang sedang Anda lihat ini dibuat dengan HTML, CSS, dan JavaScript.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Website Portfolio"
+                data-desc="Website responsif dengan dark mode, animasi typing, filter karya, dan slider testimoni.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="#" class="btn-link" target="_blank"><i class="fa-solid fa-link"></i> Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KARTU KARYA 4 ===== -->
+        <div class="portfolio-card reveal" data-category="tugas">
+          <div class="portfolio-img">
+            <img src="assets/images/project4.jpg" alt="Tugas Multimedia"
+                 onerror="this.src='https://placehold.co/600x400/10b981/ffffff?text=Karya+4'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Tugas</span>
+            <h3>Tugas Animasi 2D</h3>
+            <p>Tugas animasi 2D menggunakan Adobe Animate untuk mata pelajaran Multimedia.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Tugas Animasi 2D"
+                data-desc="Animasi 2D sederhana dengan durasi 30 detik, berisi gerakan karakter dan transisi.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="#" class="btn-link" target="_blank"><i class="fa-solid fa-link"></i> Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KARTU KARYA 5 ===== -->
+        <div class="portfolio-card reveal" data-category="desain">
+          <div class="portfolio-img">
+            <img src="assets/images/project5.jpg" alt="Logo Design"
+                 onerror="this.src='https://placehold.co/600x400/f59e0b/ffffff?text=Karya+5'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Desain</span>
+            <h3>Desain Logo Brand</h3>
+            <p>Logo untuk brand lokal UMKM dengan konsep minimalis modern.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Desain Logo Brand"
+                data-desc="Logo didesain menggunakan Adobe Illustrator dengan style flat minimalis.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="#" class="btn-link" target="_blank"><i class="fa-solid fa-link"></i> Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== KARTU KARYA 6 ===== -->
+        <div class="portfolio-card reveal" data-category="lainnya">
+          <div class="portfolio-img">
+            <img src="assets/images/project6.jpg" alt="Karya Lainnya"
+                 onerror="this.src='https://placehold.co/600x400/ef4444/ffffff?text=Karya+6'" />
+          </div>
+          <div class="portfolio-body">
+            <span class="tag">Lainnya</span>
+            <h3>Fotografi Produk</h3>
+            <p>Foto produk untuk kebutuhan feed Instagram UMKM.</p>
+            <div class="portfolio-actions">
+              <button class="btn-link view-detail" data-title="Fotografi Produk"
+                data-desc="Sesi foto produk menggunakan lighting sederhana, background kertas putih.">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="#" class="btn-link" target="_blank"><i class="fa-solid fa-link"></i> Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALERI ================= -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Galeri <span>Foto & Video</span></h2>
+      <p class="section-subtitle reveal">Momen & kegiatan yang saya abadikan</p>
+
+      <div class="gallery-grid">
+        <!-- FOTO 1 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery1.jpg" alt="Kegiatan 1"
+               onerror="this.src='https://picsum.photos/seed/g1/600/600'" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <!-- FOTO 2 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery2.jpg" alt="Kegiatan 2"
+               onerror="this.src='https://picsum.photos/seed/g2/600/600'" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <!-- FOTO 3 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery3.jpg" alt="Kegiatan 3"
+               onerror="this.src='https://picsum.photos/seed/g3/600/600'" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <!-- FOTO 4 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery4.jpg" alt="Kegiatan 4"
+               onerror="this.src='https://picsum.photos/seed/g4/600/600'" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <!-- FOTO 5 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery5.jpg" alt="Kegiatan 5"
+               onerror="this.src='https://picsum.photos/seed/g5/600/600'" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <!-- FOTO 6 -->
+        <div class="gallery-item reveal" data-type="image">
+          <img src="assets/images/gallery6.jpg" alt="Kegiatan 6"
+               onerror="thi
